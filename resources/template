@@ -1,0 +1,112 @@
+FORMAT: 1A
+HOST: {url}
+
+# {resource}
+
+## {resource} [/{route}]
+
+
+
+
+
+
+
+### Create {resource} [POST]
+
++ Attributes (object)
+
+    {resource}
+
++ Request (application/json)
+
+    + Headers
+
+            Accept: application/json
+            Authorization: Bearer {token}
+
++ Response 201 (application/json)
+
+
+
+
+
+### List {route} [GET /{route}]
+
++ Request (application/json)
+
+    + Headers
+
+            Accept: application/json
+            Authorization: Bearer {token}
+
++ Response 200 (application/json)
+
+
+
+
+
+### Show {resource} [GET /{route}/{resource_id}]
+
++ Parameters
+
+    - resource_id: `1` (string, required) - Valid {resource} ID
+
++ Request (application/json)
+
+     + Headers
+
+             Accept: application/json
+             Authorization: Bearer {token}
+
++ Response 200 (application/json)
+
+
+
+
+### Update {resource} [PATCH /{route}/{resource_id}]
+
++ Parameters
+
+    - resource_id: `1` (string, required) - Valid {resource} ID
+
++ Attributes (object)
+
+    {resource}
+
+
++ Request (application/json)
+
+     + Headers
+
+             Accept: application/json
+             Authorization: Bearer {token}
+
++ Response 200 (application/json)
+
+
+
+
+
+
+
+
+### Delete {resource} [DELETE /{route}/{resource_id}]
+
++ Parameters
+
+    - resource_id: `1` (string, required) - Valid {resource} ID
+
++ Request (application/json)
+
+     + Headers
+
+             Accept: application/json
+             Authorization: Bearer {token}
+
++ Response 204
+
+
+## Data Structures
+
+{resource}
+{attributes}

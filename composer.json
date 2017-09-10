@@ -1,0 +1,37 @@
+{
+    "name": "oleglfed/laravel-apiary",
+    "description": "Generates Apiary MSON blueprints based on routes and validation rules",
+    "keywords": [
+        "Apiary",
+        "Laravel",
+        "MSON",
+        "Blueprint",
+        "Generator"
+    ],
+    "minimum-stability": "stable",
+    "homepage": "https://github.com/oleglfed/laravel-apiary",
+    "authors": [
+        {
+            "name": "Oleg Fedoliak",
+            "email": "oleg.fedoliak@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0 || ~5.0",
+        "mockery/mockery": "^0.9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "oleglfed\\ApiaryGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "oleglfed\\ApiaryGenerator\\Tests\\": "tests/"
+        }
+    }
+}
